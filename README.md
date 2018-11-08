@@ -4,7 +4,7 @@ Tutorial and examples of Hadoop programs
 
 Steps to clone and Start
 
- 1
+ 1 clone 
  2
  3
  
@@ -18,4 +18,4 @@ Steps to clone and Start
 
 MapReduce examples
 
-Solving Top N  problem
+1 .Solving Top N  problem
