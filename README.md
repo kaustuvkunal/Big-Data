@@ -16,6 +16,16 @@ Steps to clone and Start
   Eclipse
   Hadoop 2.7.5  
 
-MapReduce examples
+Section 1 MapReduce  
 
 1 .Solving Top N  problem
+
+Section 2 HDFS
+
+Section 3 Oozie 
+
+Section 4 Hive
+
+Section5 Pig
+
+Section6 HBase
