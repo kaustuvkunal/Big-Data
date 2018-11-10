@@ -10,9 +10,9 @@ import org.apache.hadoop.io.WritableComparator;
 import org.apache.hadoop.io.WritableUtils;
 
 /**
- * This Class implements writable type for a pair of type texts
+ * This Class implements writable type for a pair of type Text
  * 
- * @author Kaustuv Kunal
+ *  
  * @version 1.0
  * @since 1.8 09-Nov-2018
  */
@@ -93,7 +93,11 @@ public class TextPair implements WritableComparable<TextPair>
         return first + "\t" + second;
     }
 
+     
     @Override
+    /**
+     * compare first element of pairs if equal then compare second element
+     */
     public int compareTo(TextPair tp)
     {
         int cmp = first.compareTo(tp.first);
