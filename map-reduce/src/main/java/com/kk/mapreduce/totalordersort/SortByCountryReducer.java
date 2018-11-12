@@ -1,4 +1,4 @@
-package com.kk.mapreduce.sort;
+package com.kk.mapreduce.totalordersort;
 
 import java.io.IOException;
 

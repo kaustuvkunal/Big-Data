@@ -1,4 +1,4 @@
-package com.kk.mapreduce.sort;
+package com.kk.mapreduce.totalordersort;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
