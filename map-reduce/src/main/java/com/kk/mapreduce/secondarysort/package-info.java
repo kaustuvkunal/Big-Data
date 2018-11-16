@@ -1,6 +1,6 @@
  
 /**
- * Package  classes  demonstrate SecondrySort in MapReduce
+ * Package  classes  demonstrate SecondarySort in MapReduce
  * @author Kaustuv Kunal
  * @version 1.0
  * @since  1.8 
