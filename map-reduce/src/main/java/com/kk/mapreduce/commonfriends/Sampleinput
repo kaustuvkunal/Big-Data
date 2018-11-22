@@ -1,0 +1,6 @@
+A->B,C,D,F
+B->A,D
+C->A,F
+D->A,B
+E->F
+F->A,C,E
