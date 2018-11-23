@@ -6,7 +6,7 @@ Default partition is hash function
 
 
 
-To implement custom partitioner,Extend partitioner classand implement its getPartion() method
+To implement custom partitioner,extend partitioner class and implement its getPartion() method
 
 
 
