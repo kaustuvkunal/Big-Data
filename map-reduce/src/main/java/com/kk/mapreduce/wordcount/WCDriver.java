@@ -8,24 +8,18 @@ import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
-/**
- * Driver Class for MapReduce word count problem
- *  
- * @version 1.0
- * @since  1.8 
- * 09-Nov-2018
- */
 public class WCDriver
 {
     public static void main(String[] args) throws Exception
     {
+
         Configuration conf = new Configuration();
         Job job = Job.getInstance(conf, "word count");
         job.setJarByClass(WCDriver.class);
         job.setMapperClass(WCMapper.class);
         job.setCombinerClass(WCReducer.class);
         job.setReducerClass(WCReducer.class);
-        job.setNumReduceTasks(1);
+
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
 
@@ -37,3 +31,6 @@ public class WCDriver
         System.exit(job.waitForCompletion(true) ? 0 : 1);
     }
 }
+
+
+

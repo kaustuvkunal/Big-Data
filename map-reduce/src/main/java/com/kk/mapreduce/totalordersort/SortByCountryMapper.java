@@ -6,6 +6,7 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
+import org.apache.log4j.Logger;
 
 /**
  * Mapper class to take countrylist text format file and returns (countryname,
@@ -20,6 +21,7 @@ import org.apache.hadoop.mapreduce.Mapper;
 public class SortByCountryMapper
         extends Mapper<LongWritable, Text, Text, NullWritable>
 {
+    private Logger log = Logger.getLogger(SortByCountryMapper.class);
 
     public void map(LongWritable key, Text value, Context context)
             throws IOException, InterruptedException
@@ -33,7 +35,7 @@ public class SortByCountryMapper
         }
         catch (Exception e)
         {
-            System.err.println("error in input line" + e.getMessage());
+            log.error("error in input line" + e.getMessage());
 
         }
 

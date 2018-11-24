@@ -2,18 +2,13 @@ package com.kk.mapreduce.wordcount;
 
 import java.io.IOException;
 import java.util.StringTokenizer;
+
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
-/**
- * 
- * Mapper class for word count problem
- * @version 1.0
- * @since  1.8 
- * 09-Nov-2018
- */
+ 
 
 public class WCMapper extends Mapper<LongWritable, Text, Text, IntWritable>
 {
@@ -32,3 +27,7 @@ public class WCMapper extends Mapper<LongWritable, Text, Text, IntWritable>
         }
     }
 }
+
+
+
+

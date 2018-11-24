@@ -26,8 +26,7 @@ public class CmnFrndDriver
         }
 
         Configuration conf = new Configuration();
-        conf.set("mapreduce.input.keyvaluelinerecordreader.key.value.separator",
-                "\t");
+        
         Job job = Job.getInstance(conf, "Common Friend");
 
         job.setJarByClass(CmnFrndDriver.class);

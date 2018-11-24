@@ -7,7 +7,6 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
-
 import com.kk.mapreduce.DeleteExistingHadoopOutput;
 import com.kk.mapreduce.partitioner.TextSortPartitioner;
 
@@ -27,7 +26,7 @@ public class SortByCountryDriver
         Configuration conf = new Configuration();
         Job job = Job.getInstance(conf, "CountrySort using customPartitioner ");
         job.setJarByClass(SortByCountryDriver.class);
-        
+
         Path hadoopInputPath = new Path(args[0]);
         Path hadoopOutputPath = new Path(args[1]);
 
@@ -35,15 +34,15 @@ public class SortByCountryDriver
         DeleteExistingHadoopOutput deleteExistingHadoopOutput = new DeleteExistingHadoopOutput(
                 hadoopOutputPath, conf);
         deleteExistingHadoopOutput.removeHDFSFolderIfExists();
-        
+
         job.setMapperClass(SortByCountryMapper.class);
         job.setMapOutputKeyClass(Text.class);
         job.setMapOutputValueClass(NullWritable.class);
-        
-        // custom partitioner  
+
+        // custom partitioner partition key space in 2 set
         job.setPartitionerClass(TextSortPartitioner.class);
-        
-        //key set partitioned into two set
+
+        // number of reduce is equal to number of partitions
         job.setNumReduceTasks(2);
 
         job.setReducerClass(SortByCountryReducer.class);

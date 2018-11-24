@@ -92,6 +92,7 @@ public class TotalSortByCountryDriver
 
             //  Set number of reducer
             // number of partition = number of reducer -1
+            //what if I do not set number of reducer
             sortingJob.setNumReduceTasks(4);
             sortingJob.setReducerClass(SortByCountryReducer.class);
             sortingJob.setOutputFormatClass(TextOutputFormat.class);

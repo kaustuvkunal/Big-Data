@@ -1,13 +1,13 @@
 package com.kk.mapreduce.topnproblem;
 
 import java.io.IOException;
-import org.apache.log4j.Logger;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
+import org.apache.log4j.Logger;
 
 /**
  * Reducer class to emits first N keys only.

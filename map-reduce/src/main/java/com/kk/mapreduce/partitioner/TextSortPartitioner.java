@@ -6,12 +6,12 @@ import org.apache.hadoop.mapreduce.Partitioner;
 import org.apache.log4j.Logger;
 
 /**
- * Custom partitioner class to partition text key space into two in order to generate 
- * total order sorting 
+ * Custom partitioner class to partition text key space into two in order to
+ * generate total order sorting
+ * 
  * @author Kaustuv Kunal
  * @version 1.0
- * @since  1.8 
- * 12-Nov-2018
+ * @since 1.8 12-Nov-2018
  */
 public class TextSortPartitioner extends Partitioner<Text, NullWritable>
 {
@@ -34,7 +34,8 @@ public class TextSortPartitioner extends Partitioner<Text, NullWritable>
         }
         catch (Exception e)
         {
-            log.error("error in custom partitioner:Partitioner" + e.getMessage());
+            log.error(
+                    "error in custom partitioner:Partitioner" + e.getMessage());
         }
 
         return 0;
