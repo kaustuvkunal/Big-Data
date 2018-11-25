@@ -1,8 +1,5 @@
 package com.kk.mapreduce.topnproblem;
 
-import java.io.IOException;
-
-import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
@@ -25,16 +22,7 @@ public class TopNMapper extends Mapper<LongWritable, Text, LongWritable, Text>
     /**
      * Fetch configured parameters header_exist, header etc
      */
-    protected void setup(
-            Mapper<LongWritable, Text, LongWritable, Text>.Context context)
-            throws IOException, InterruptedException
-    {
-
-        Configuration conf = context.getConfiguration();
-        headerFlag = Boolean.parseBoolean(conf.get("Header_Flag"));
-        header = conf.get("Header");
-
-    }
+    
 
     public void map(LongWritable key, Text value, Context context)
             throws InterruptedException
@@ -49,7 +37,7 @@ public class TopNMapper extends Mapper<LongWritable, Text, LongWritable, Text>
         }
         catch (Exception e)
         {
-            log.error("error in top n mapper " + e.getMessage() + "value is"
+            log.error("error in top n mapper for entry " +e.getMessage() + "value is"
                     + value.toString());
         }
     }

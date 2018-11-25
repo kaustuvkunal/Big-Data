@@ -28,8 +28,7 @@ import com.kk.mapreduce.DeleteExistingOutputPath;
  */
 public class TopNSalariesDriver
 {
-    private static Logger log = Logger
-            .getLogger(TopNSalariesDriver.class);
+    private static Logger log = Logger.getLogger(TopNSalariesDriver.class);
 
     public static void main(String[] args)
             throws IOException, ClassNotFoundException, InterruptedException
@@ -53,14 +52,10 @@ public class TopNSalariesDriver
             // Set the value of N
             conf.set("Value_Of_N", prop.getProperty("topn.value"));
 
-            // Specify if Data-set contains Header
-            conf.set("Header_Flag", prop.getProperty("topn.input.header.flag"));
-            conf.set("Header_content",
-                    prop.getProperty("topn.input.header.content"));
-            Job job = Job.getInstance(conf, "TopNSalariesDriver");
+            Job job = Job.getInstance(conf, "Top-N-Salaries ");
             job.setJarByClass(TopNSalariesDriver.class);
-            Path in = new Path("/Users/kaustuv/employee_data");
-            Path out = new Path("/Users/kaustuv/aaaaour");
+            Path in = new Path(args[0]);
+            Path out = new Path(args[1]);
 
             // To Delete HDFS output folder if exist already
             DeleteExistingHadoopOutput deleteExistingHadoopOutput = new DeleteExistingHadoopOutput(
@@ -75,11 +70,11 @@ public class TopNSalariesDriver
             FileInputFormat.setInputPaths(job, in);
             FileOutputFormat.setOutputPath(job, out);
 
-            job.setNumReduceTasks(1);
-
             job.setMapperClass(TopNMapper.class);
-            job.setCombinerClass(TopNCombiner.class); // Added the
-                                                              // combiner class
+
+            // Added the combiner class
+            job.setCombinerClass(TopNCombiner.class);
+
             job.setReducerClass(TopNSalariesReducer.class);
 
             // Sorting keys in descending order
