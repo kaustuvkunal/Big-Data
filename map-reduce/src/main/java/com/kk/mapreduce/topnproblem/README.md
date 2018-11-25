@@ -39,4 +39,5 @@ In the reducer emit  respective key or values base on use case
 
 
 
-
+************
+If there are multiple part-r-filies combing a single sorted file usibg unit command 
