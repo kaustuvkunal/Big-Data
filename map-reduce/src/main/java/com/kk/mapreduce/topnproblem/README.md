@@ -34,9 +34,26 @@ Use combiner to fetch top N keys  of the map
 In the reducer emit  respective key or values base on use case 
 
 
+
+***************
+
+We have solve finding top N slay and wealthest problem note the chage in reducer mapper and reducer code is common
+
+
  
+ *************
+ Execution commands 
  
+ Top N salary
+ 
+ From mapreduce folder
+
+hadoop jar target/map-reduce-1.0-SNAPSHOT.jar com.kk.mapreduce.topnproblem.TopNSalariesDriver  <input-Path>  <outputpath>
 
 
+Top N highest paid employee
+hadoop jar target/map-reduce-1.0-SNAPSHOT.jar com.kk.mapreduce.topnproblem.TopNWealthiestPersonsDriver <input-Path>  <outputpath> 
 
 
+************
+If there are multiple part-r-filies combing a single sorted file usibg unit command 
