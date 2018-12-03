@@ -9,3 +9,6 @@
 `hadoop jar <path_for_map-reduce-1.0-SNAPSHOT.jar> com.kk.mapreduce.maxtempusingcombineinputformat.CombineFileProcessDriver <input_file_path>  <output_folder_path>`
 
 
+
+Refer previous MaxTem program for sample inputs
+https://github.com/kaustuvkunal/Big-Data/tree/master/map-reduce/src/main/java/com/kk/mapreduce/maxtemp
