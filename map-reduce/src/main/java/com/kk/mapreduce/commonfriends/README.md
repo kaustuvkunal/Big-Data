@@ -1,5 +1,5 @@
 
-## Sample program to Find Common Facebook Friend via MapReduce
+## Sample program to find common friends via MapReduce
 
 ###### Sample Input
 Input file Consist of person and her friend list as `person->friend-list`
