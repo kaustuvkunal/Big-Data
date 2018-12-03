@@ -6,5 +6,6 @@
 
 ## Execution Command 
 
-- For Sorting  using Custom-Partitioner 
 `hadoop jar <path_for_map-reduce-1.0-SNAPSHOT.jar> com.kk.mapreduce.maxtempusingcombineinputformat.CombineFileProcessDriver <input_file_path>  <output_folder_path>`
+
+
