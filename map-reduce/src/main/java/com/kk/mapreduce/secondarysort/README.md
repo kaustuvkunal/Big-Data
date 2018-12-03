@@ -4,7 +4,7 @@
 What if our use case require us to sort values also ? 
 
 ###### Option1 : Sort values inside reducer
- -faster but memory inefficient
+ - Faster but memory inefficient
 
 ###### Option 2 :  Define new key as combination of key &value and perform sorting & grouping of new key in specific order as per business requirement 
 
