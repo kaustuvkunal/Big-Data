@@ -19,7 +19,7 @@ public class MaxTempSecondarySortKeyComparator extends WritableComparator
         super(IntFloatPair.class, true);
     }
 
- // sort years is ascending  then temprature in descending 
+ // sort years is ascending  then temperature in descending 
     @Override    
     public int compare(WritableComparable w1, WritableComparable w2)
     {
