@@ -70,7 +70,7 @@ C,F ->A
 ```
 
 ## Reduce Phase
-Merge all values in a single set, this will eliminate the duplicate too
+Merge all values in a single set, this will eliminate the duplicates too
 
 ######  Reducer Input
 ```
