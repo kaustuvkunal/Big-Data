@@ -26,15 +26,15 @@ public class CmnFrndDriver
         }
 
         Configuration conf = new Configuration();
-        
+
         Job job = Job.getInstance(conf, "Common Friend");
 
         job.setJarByClass(CmnFrndDriver.class);
 
         Path hadoopInputPath = new Path(args[0]);
         Path hadoopOutputpath = new Path(args[1]);
-        
-     // To Delete HDFS output folder if exist already
+
+        // To Delete HDFS output folder if exist already(optional)
         DeleteExistingHadoopOutput deleteExistingHadoopOutput = new DeleteExistingHadoopOutput(
                 hadoopOutputpath, conf);
         deleteExistingHadoopOutput.removeHDFSFolderIfExists();

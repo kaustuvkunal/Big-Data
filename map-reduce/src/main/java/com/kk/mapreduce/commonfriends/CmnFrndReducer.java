@@ -17,7 +17,8 @@ public class CmnFrndReducer extends Reducer<Text, Text, Text, Text>
         Set<String> set = new HashSet<>();
         for ( Text value : values)
         {
-            Collections.addAll(set, value.toString().split(","));    
+            Collections.addAll(set, value.toString().split(",")); 
+            set.remove(",");
         }
         context.write(key, new Text(set.toString())  );
     }

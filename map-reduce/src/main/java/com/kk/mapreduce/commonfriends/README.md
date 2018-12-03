@@ -1,5 +1,5 @@
 
-## Finding Common Facebook Friend via MapReduce
+## Sample program to Find Common Facebook Friend via MapReduce
 
 ###### Sample Input
 Input file Consist of person and her friend list as `person->friend-list`
@@ -14,6 +14,7 @@ F->A,C
 ```
 
 ###### Sample Output 
+Output file
 ```
 A-B	[C, D, F]
 A-C	[B, D, F]
@@ -33,18 +34,18 @@ E-F	[A, C, E, F]
 
 
 ## MapPhase
-For each K,V where 
+For each K,V where, 
 K is person 
-V is her friend list 
+ and V is her list of friends 
 
-emit comman friends for pair of friend, keepping the paiir of friend  in alphbetical order
+emit common friends for each pair of friend, keeping the pair of friends in alphabetical order
 
-######  Map Input 
+######  Map Input-1 
 ```
 A->B,C,D,F
 ```
 
-###### Map Output
+###### Map Output-1
 ```
 A,B -> C,D,F
 
@@ -56,11 +57,11 @@ A,F -> B,C,D
 ```
 
  
-######  Map Input 
+######  Map Input-2 
 ```
 C->A,F
 ```
-######  Output
+######  Map Output-2
 
 ```
 A,C ->F
@@ -69,7 +70,7 @@ C,F ->A
 ```
 
 ## Reduce Phase
-Merger all vlaues in a single set, this will eliminate the duplicate too
+Merge all values in a single set, this will eliminate the duplicate too
 
 ######  Reducer Input
 ```
