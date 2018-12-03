@@ -35,7 +35,7 @@ E-F	[A, C, E, F]
 ## MapPhase
 For each K,V where 
 K is person 
-V is her friend 
+V is her friend list 
 
 emit comman friends for pair of friend, keepping the paiir of friend  in alphbetical order
 
