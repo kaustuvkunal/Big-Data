@@ -7,12 +7,12 @@
 - Package implements both solution, where we have fetched sorted country names from a geographical data  set
 
 
-### Sorts data using Custom-Partitioner
+### Sort data using Custom-Partitioner
  
  Driver Class : `SortByCountryDriver` 
  Define a custom partition for incremental partitioning and explictly set number of reducer equal to number of partitions.
  
-### Sorts data using Total-Order-Partitioner 
+### Sort data using Total-Order-Partitioner 
  
 Driver Class : `TotalSortByCountryDriver`
 Using InputSampler &  TotalOrderPartitioner
@@ -21,6 +21,7 @@ Using InputSampler &  TotalOrderPartitioner
 ### Execution Command 
 
 - For Sorting  using Custom-Partitioner 
+
 `hadoop jar <path_for_map-reduce-1.0-SNAPSHOT.jar> com.kk.mapreduce.totalordersort.SortByCountryDriver <input_file_path>  <output_folder_path>`
 
 
@@ -30,7 +31,7 @@ Using InputSampler &  TotalOrderPartitioner
 
 
 ###### Sample Input extract
-Input file Consist of person and her friend list as `person->friend-list`
+ 
 
 ```
  "106","Maldives","Republic of Maldives","Independent State",,,"Male","MVR","Rufiyaa","+960","MV","MDV","462",".mv"
@@ -67,7 +68,7 @@ Mayotte
 
 
 
-###### All classes are documented and self explanatory
+ All classes are documented and self explanatory
 
  
 
