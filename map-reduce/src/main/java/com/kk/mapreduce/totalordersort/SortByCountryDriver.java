@@ -11,7 +11,7 @@ import com.kk.mapreduce.DeleteExistingHadoopOutput;
 import com.kk.mapreduce.partitioner.TextSortPartitioner;
 
 /**
- * MapReduce driver class to fetch alphabetical sorted country names using
+ * MapReduce driver class to fetch alphabetically sorted country names using
  * custom partitioner
  * 
  * @author Kaustuv Kunal

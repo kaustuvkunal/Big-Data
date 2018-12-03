@@ -9,10 +9,6 @@ import org.apache.hadoop.mapreduce.Reducer;
 /**
  * Identity Reducer class
  * 
- * @author Kaustuv
- *
- * 
- * 
  */
 public class SortByCountryReducer
         extends Reducer<Text, NullWritable, Text, NullWritable>

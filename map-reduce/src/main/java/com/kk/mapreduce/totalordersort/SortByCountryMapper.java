@@ -10,7 +10,7 @@ import org.apache.log4j.Logger;
 
 /**
  * Mapper class to take countrylist text format file and returns (countryname,
- * nullwritable) pair
+ * NullWritable) pair
  * 
  * @author Kaustuv
  *
