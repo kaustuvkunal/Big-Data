@@ -1,59 +1,44 @@
-<h>TopN Problem using MapReduce</h>
+###	 TopN Problem using MapReduce</h>
 
-MapRedcue can be used in problems where we need to find topN elements in a data sets
-for example 
-Finding top 10 salary of a company
-Finding top 50 Higest paid employe
-Finding top hastag of the day from twitter data set
-Top 100 cited paper related to a particular topic 
+MapRedcue can be used in problems when we need fetch topN elements in a data sets for example, 
+-	Finding top 10 salary of a company
+-	Finding top 50 higest paid employe
+-	Finding top hastag of the day from twitter data set
+-	Top 100 cited paper related to a particular topic 
 
- Note:
- While solving we hav to take account that values can be duplicate 
- two employee can have same salary, in such case 
- we can have more than n results with  all n+1 entries will have identical values 
+
+ We have to take account of duplicate  values for example two employee can have same salary, in such case we can have more than n results with all n+1 entries as identical values. So, 
+ -	If we are calculating top N salary then there will be 10 entries only 
+ -	If we are to fetch top 10 highly paid employ it may emit more than 10 entries
  
- If we are calculatin top N salay then there will be 10 entries only 
- If we are to fetch top 10 highly paid employ it may emit more than 10 entries
+######		Solution 1: Using Tree Map 
+ -	Declare N-size tree map in setup method
+ -	Initialize in map method 
+ -	Emit in cleanup method
+ -	Use single reducer and emit tree map entries in reducer 
  
- Soultion 1:
+ The tree map does not keep into account duplicates so its not a feasible solution
+ However if you want to use tree sort we need to implement custom comparator to keep track of duplicates.
  
- Tree Map 
- Declare N-size tree map in setup method 
- Initialise in map method 
- emit in cleanup method 
  
- the tree map does not keep into acount duplicates so its not a feasible solution
- Howeverif you want to use tree sort we need to implement custom comparator to keep track of duplicates.
- Use single reducer approach and emit tree map entries in redcucer.
- 
- Solution 2 :
- 
-Let map method emith key sorted by default 
-Use combiner to fetch top N keys  of the map
-
-In the reducer emit  respective key or values base on use case 
+######	 Solution 2 : Using Combiner
+- 	Map method emit sorted key (by default)
+-	Use combiner to fetch top N keys of the map
+-	In the reducer emit respective key or values base on our use case 
 
 
 
-***************
+We have fetched 
+-top N salary and 
+-top N wealthiest   
 
-We have solve finding top N slay and wealthest problem note the chage in reducer mapper and reducer code is common
+ ### Execution Command  Top N salary
 
+`hadoop jar <path-for-map-reduce-1.0-SNAPSHOT.jar> com.kk.mapreduce.topnproblem.TopNSalariesDriver  <input-Path>  <outputpath>`
+
+
+### Execution Command  Top N highest paid employee
+`hadoop jar <path-for-map-reduce-1.0-SNAPSHOT.jar> com.kk.mapreduce.topnproblem.TopNWealthiestPersonsDriver <input-Path>  <outputpath> `
 
  
- *************
- Execution commands 
  
- Top N salary
- 
- From mapreduce folder
-
-hadoop jar target/map-reduce-1.0-SNAPSHOT.jar com.kk.mapreduce.topnproblem.TopNSalariesDriver  <input-Path>  <outputpath>
-
-
-Top N highest paid employee
-hadoop jar target/map-reduce-1.0-SNAPSHOT.jar com.kk.mapreduce.topnproblem.TopNWealthiestPersonsDriver <input-Path>  <outputpath> 
-
-
-************
-If there are multiple part-r-filies combing a single sorted file usibg unit command 
