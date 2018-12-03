@@ -33,7 +33,7 @@ E-F	[A, C, E, F]
 ###  Solution
 
 
-## MapPhase
+## Map Phase
 For each K,V where, 
 K is person 
  and V is her list of friends 
