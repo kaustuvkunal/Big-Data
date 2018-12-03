@@ -2,7 +2,7 @@
 ## Finding Common Facebook Friend via MapReduce
 
 ###### Sample Input
-Consist of person-> its friend list e.g.
+Input file Consist of person and her friend list as `person->friend-list`
 
 ```
 A->B,C,D,F
