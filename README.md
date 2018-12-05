@@ -18,7 +18,7 @@ This is an extensive open-source tutorial about Hadoop's ecosystem
 
 ### Modules
 
- 1. MapReduce 
+ 1. MapReduce</br> 
  https://github.com/kaustuvkunal/Big-Data/tree/master/map-reduce
  
   
