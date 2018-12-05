@@ -22,11 +22,8 @@ This is tutorial about Hadoop and Its ecosystem
   
  2. Hive 
  
- 3. HDFS
+ .. To Be Updated..
  
- 4. Sqoop
- 
- 5. HBase
  
  
  
