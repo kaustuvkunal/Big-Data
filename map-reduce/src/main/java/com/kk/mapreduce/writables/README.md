@@ -14,7 +14,7 @@ values are instance of Writable.
 
 - IntFloatPair : Custom writable of pair of  int & float type
 - TextPair : Custom writable of pair of Text & Text type
-- FileLineWritable.java :Custom writable of pair of LongWritable & String type
+- FileLineWritable : Custom writable of pair of LongWritable & String type
 
 
 
