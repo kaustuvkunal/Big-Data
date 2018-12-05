@@ -2,8 +2,8 @@
 ### Partitioner
 
 - Partitioner class partitions the keys of intermediate map output
-- They Ensure identical keys go to same reducer
-- Total number of partitions equal to number of reducer
+- They ensure identical keys go to same reducer
+- Total number of partitions is equal to number of reducer
 - Default partition is hash function
 
 
