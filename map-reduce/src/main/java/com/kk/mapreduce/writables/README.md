@@ -7,8 +7,8 @@
 - To overcome, hadoop defines their own datatype  known as writable
 - WritableCompareble is a writable which is also comparable 
 - All MapReduce keys are instance of writablecomparable  and all
-values are instance of Writable.
--User can write their own writable type by implementing writable interface
+values are instance of Writable
+- User can write their own writable type by implementing writable interface
 
 ### Package contain following Custom-Writable 
 
