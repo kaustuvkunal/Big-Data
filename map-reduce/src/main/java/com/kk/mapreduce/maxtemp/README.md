@@ -8,7 +8,7 @@
 </P>
 In this package we have produced Gzip compressed output for MaxTemp problem.
 
-Also note that Output-Format is SequenceFileOutputFormat
+Also note that Output-Format is SequenceFileOutputFormat.
 
 
 
