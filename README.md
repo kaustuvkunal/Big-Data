@@ -1,6 +1,6 @@
 # Big Data 
 
-This is tutorial about Hadoop and Its ecosystem 
+This is an extensive tutorial about Hadoop and Its ecosystem 
  
 ### Installation  
  
