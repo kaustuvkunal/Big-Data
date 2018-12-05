@@ -1,22 +1,23 @@
-MapReduce Tutarial
+MapReduce  
 
-Login used : Log4J
+To clone:
+`git clone git clone https://github.com/kaustuvkunal/Big-Data.git`
 
-Execution command 
+To execute
 hadoop jar <jar-path> <driver-class-path> <hdfs-input-path> <hdfs-output-path>
 
 
+Covers
 
-Example 
+-Combiner
+-Distributed cache
+-
 
-Total sort Using custom partitioner
-hadoop jar target/map-reduce-1.0-SNAPSHOT.jar com.kk.mapreduce.sort.SortByCountryDriver /Users/kaustuv/countrylistcopy.txt /Users/kaustuv/CountrySort-output
-
-
-Total sort Using total order partitioner and input sampler 
-
-hadoop jar target/map-reduce-1.0-SNAPSHOT.jar com.kk.mapreduce.sort.TotalSortByCountryDriver /Users/kaustuv/countrylistcopy.txt /Users/kaustuv/TotalPartitionerCountrySort 
-
-WordCount
-
-ToPN Problem
+- TopN Problem
+- Common Friend
+- Sorting using custom partitioner
+- Sorting using TotalOrderPartitioner
+- Secondary Sort
+- Processing large number of small file using combineFileInputFormat & custom writable
+- Counters
+-
