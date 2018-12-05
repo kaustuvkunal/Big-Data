@@ -1,6 +1,6 @@
 # Big Data 
 
-This is an extensive tutorial about Hadoop and Its ecosystem 
+This is an extensive open-source tutorial about Hadoop's ecosystem 
  
 ### Installation  
  
@@ -19,10 +19,12 @@ This is an extensive tutorial about Hadoop and Its ecosystem
 ### Modules
 
  1. MapReduce 
+ https://github.com/kaustuvkunal/Big-Data/tree/master/map-reduce
+ 
   
  2. Hive 
  
- .. To Be Updated..
+ .. To Be added..
  
  
  
@@ -34,4 +36,4 @@ This is an extensive tutorial about Hadoop and Its ecosystem
 
 
 ###  
-Feedback and pull requests are welcome.
+Suggestions and pull requests are welcome.
