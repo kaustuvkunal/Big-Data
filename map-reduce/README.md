@@ -7,21 +7,21 @@
 ### Covers
 
 - Combiner
-- Distributed cache
+- Distributed Cache
 - Top N Problem
 - Finding Common Friend
-- Sorting using custom partitioner
-- Sorting using TotalOrderPartitioner
+- Sorting using Custom Partitioner
+- Sorting Uuing Total-Order-Partitioner
 - Secondary Sort
-- Processing large number of small file using combineFileInputFormat & custom writable
+- Processing large number of small file using CombineFileInputFormat & Custom Writable
 - Counters
 
-- Test Using MR Uni
+- Test Using MR-Unit
 
 
 ####  Pre-requisite
 
- -  hadoop version 2.7.5 (psudo-distribution or distribution mode)
+ -  Hadoop version 2.7.5 (psudo-distribution or distribution mode)
  </br> In case of diffrent version update the pom 
 
 ####  Execute
