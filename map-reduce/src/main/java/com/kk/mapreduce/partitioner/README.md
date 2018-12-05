@@ -9,7 +9,7 @@
 
 
 #### MyCustomPartitioner.java 
-Implement custom partitioner
+Implements custom partitioner
 
  
 
