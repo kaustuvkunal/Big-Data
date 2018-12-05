@@ -1,71 +1,25 @@
 
 
-Writables
+## Writables
 
-
-üIn distributed systems, data spend lots of time doing inter node transfer hence undergoes frequent serialisation & de-serialisation
-
-
-üStandard java data type are not suitable for this
-
-
-üTo overcome, hadoop defines their own datatype  known as writable
-
-
-üWritableCompareble is a writable which is also comparable 
-
-
-
-üAll MapReduce keys are instance of writablecomparable  and all
+- In distributed systems, data spend lots of time doing inter node transfer hence undergoes frequent serialisation & de-serialisation
+- Standard java data type are not suitable for this
+- To overcome, hadoop defines their own datatype  known as writable
+- WritableCompareble is a writable which is also comparable 
+- All MapReduce keys are instance of writablecomparable  and all
 values are instance of Writable.
+-User can write their own writable type by implementing writable interface
+
+### Packages contain following customWritable 
+
+- IntFloatPair : Custom writable of pair of  int & float type
+- TextPair : Custom writable of pair of Text & Text type
+- FileLineWritable.java :Custom writable of pair of LongWritable & String type
 
 
 
 
-
-
-
-
-
-
-Custom
-Writable
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-üUser can write their own writable type by implementing writable
-interface*
-
-
-üWritable interface defines two methods write & readFields.
-
-
-WritableComparable interface is a sub interface of the Writable and java.lang.Comparable interfaces
-
-This packages contain following customWritable 
- FileLineWritable.java - Filename & Line 
- IntFloatPair.java
- TextPair.java
-
-
-
-
-
-
-
-
-
+  
 
 
 
