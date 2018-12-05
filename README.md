@@ -1,25 +1,27 @@
 # Big Data 
 
-This tutorial  about learning Hadoop and Its ecosystem 
+This is tutorial about Hadoop and Its ecosystem 
  
 ### Installation  
  
 ##### Clone 
  `git clone git clone https://github.com/kaustuvkunal/Big-Data.git`
  
-#####  Use an IDE 
-
+ ##### Pre-requisite
+ ```
    - Maven
-  - Java 8
-  - Hadoop 2.7.5  
+   - Java 8
+   - Hadoop 2.7.5 
+   - IDE
+   ```
 
 
-##  Modules
+### Modules
 
- -  MapReduce 
- Processing framework of hadoop
+ 1. MapReduce 
+  
 
- -  Hive
+ 2. Hive 
  
  
  
@@ -27,5 +29,5 @@ This tutorial  about learning Hadoop and Its ecosystem
 
 
 
-### Final Thoughts
-Thank you for working through this tutorial. Feedback and pull requests are welcome.
+###  
+Feedback and pull requests are welcome.
