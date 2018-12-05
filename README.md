@@ -4,8 +4,7 @@ This is an extensive open-source tutorial about Hadoop's ecosystem
  
 ### Installation  
  
-##### Clone 
- `git clone git clone https://github.com/kaustuvkunal/Big-Data.git`
+
  
  ##### Pre-requisite
  ```
@@ -14,6 +13,16 @@ This is an extensive open-source tutorial about Hadoop's ecosystem
    - Hadoop 2.7.5 
    - IDE
    ```
+##### Clone 
+
+ `git clone git clone https://github.com/kaustuvkunal/Big-Data.git`
+
+ ##### Build
+ ```
+ cd big-data
+ mvn clean install
+ ```
+
 
 
 ### Modules
