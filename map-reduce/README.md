@@ -21,7 +21,7 @@
 
 ####  Pre-requisite
 
- -  hadoop version 2.7.5 (Distributer Or psudo distribution)
+ -  hadoop version 2.7.5 (distributed Or psudo-distribution mode)
  </br> In case of diffrent version update the pom 
 
 ####  Execute
