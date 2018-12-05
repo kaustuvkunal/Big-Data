@@ -7,6 +7,7 @@
 - Compression codec classes are available for Gzip,BBZIP2, LLZO,LZ4, Snappytype compression
 </P>
 In this package we have produced Gzip compressed output for MaxTemp problem.
+
 Also note that Output-Format is SequenceFileOutputFormat
 
 
