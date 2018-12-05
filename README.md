@@ -22,9 +22,8 @@ This is an extensive open-source tutorial about Hadoop's ecosystem
  https://github.com/kaustuvkunal/Big-Data/tree/master/map-reduce
  
   
- 2. Hive 
+ 2.  
  
- .. To Be added..
  
  
  
