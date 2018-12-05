@@ -10,7 +10,7 @@
 values are instance of Writable.
 -User can write their own writable type by implementing writable interface
 
-### Packages contain following customWritable 
+### Package contain following Custom-Writable 
 
 - IntFloatPair : Custom writable of pair of  int & float type
 - TextPair : Custom writable of pair of Text & Text type
