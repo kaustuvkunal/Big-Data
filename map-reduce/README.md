@@ -1,5 +1,6 @@
 ## MapReduce  
 
+ - as a separate project 
 ##### Clone:
 `git clone git clone https://github.com/kaustuvkunal/Big-Data.git`
 
