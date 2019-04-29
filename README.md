@@ -2,6 +2,7 @@
 
 This is an extensive open-source tutorial about Hadoop's ecosystem 
  
+ Lsts separate and modularize 
 ### Installation  
  
 
