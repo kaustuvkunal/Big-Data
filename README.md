@@ -30,15 +30,19 @@ This is an extensive open-source tutorial about Hadoop's ecosystem
 
  1. MapReduce</br> 
  https://github.com/kaustuvkunal/Big-Data/tree/master/map-reduce
- 
   
- 2.  TBA
+ 2. Hive
  
+ 3. HBase
  
+ 4. Oozie
  
+ 5. Sqoop
  
+ 6. HDFS 
  
- 
+ 7. Spark
+  
  
  
 
