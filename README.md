@@ -30,7 +30,8 @@ This is an extensive open-source tutorial about Hadoop's ecosystem
  1. MapReduce</br> 
  https://github.com/kaustuvkunal/Big-Data/tree/master/map-reduce
   
- 2. Hive
+ 2. Hive</br>
+ https://github.com/kaustuvkunal/Hive-Tutorial
  
  3. HBase
  
