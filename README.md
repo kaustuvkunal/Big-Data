@@ -33,6 +33,9 @@ This is an extensive open-source tutorial about Hadoop's ecosystem
  2. Hive</br>
  https://github.com/kaustuvkunal/Hive-Tutorial
  
+ 3. Spark </br>
+ https://github.com/kaustuvkunal/Spark-Ecosystem-Tutorial
+ 
  3. HBase
  
  4. Oozie
@@ -41,7 +44,6 @@ This is an extensive open-source tutorial about Hadoop's ecosystem
  
  6. HDFS 
  
- 7. Spark
   
  
  
